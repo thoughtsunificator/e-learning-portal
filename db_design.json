@@ -1,0 +1,248 @@
+{
+  "org": {
+    "name": "aeczone academy",
+    "org_desc": "some demo content",
+    "org_metadata": {}
+  },
+  "document": {
+    "student": {
+      "test123": {
+        "student_id": 1,
+        "student_name": "xyz xyz xyz",
+        "batch_no": 1,
+        "course_id": "bimplus",
+        "country": "UAE",
+        "payment": "completed",
+        "student_email": "xyz@mail.com",
+        "student_username": "xyz",
+        "password": "hashvalue",
+        "enrolled_date": "22/11/2022",
+        "attendance": 12,
+        "modules_completed": [1, 2],
+        "assignments": {
+          "missed": [
+            {
+              "assignment_id": 1,
+              "mid": 1,
+              "deadline": "2/02/2022",
+              "submitted_on": ""
+            }
+          ],
+          "upcoming": [
+            {
+              "assignment_id": 2,
+              "mid": 2,
+              "deadline": "5/02/2022",
+              "submitted_on": ""
+            }
+          ],
+          "completed": [
+            {
+              "assignment_id": 2,
+              "mid": 2,
+              "deadline": "5/02/2022",
+              "submitted_on": "4/02/2022"
+            }
+          ]
+        }
+      }
+    },
+    "student_metadata": {
+      "test123": {
+        "modules_completed": [
+          { "moduleid": 1, "module_completion_date": "20/01/2022" }
+        ],
+        "ongoing_modules": [
+          {
+            "moduleid": 2,
+            "percentage_completed": 10,
+            "resources_completed": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    "batch": {
+      "1": {
+        "batch_no": 1,
+        "batch_start": "26/05/2021",
+        "batch_end": "30/06/2021",
+        "batch_incharge": "Mr. Willy Wonka",
+        "total_classes": 25,
+        "course_id": "bim1",
+        "status": "ongoing"
+      },
+      "2": {
+        "batch_no": 2,
+        "batch_start": "20/05/2021",
+        "batch_end": "19/06/2021",
+        "batch_incharge": "Mr. Willy Wonka",
+        "total_classes": 22,
+        "course_id": "bim2",
+        "status": "notstarted"
+      },
+      "3": {
+        "batch_no": 3,
+        "batch_start": "20/05/2021",
+        "batch_end": "19/06/2021",
+        "batch_incharge": "Mr. Willy Wonka",
+        "total_classes": 22,
+        "course_id": "bim2",
+        "status": "completed"
+      }
+    },
+    "admin": {
+      "username": "username",
+      "password": "hashvalue",
+      "student_credentials": [
+        {
+          "username": "",
+          "password": ""
+        }
+      ],
+      "admin_metadata": {
+        "courses": ["bim1", "bim2"],
+        "batches": [1, 2, 3, 4],
+        "payment_status": ["completed", "not paid", "partial payment"]
+      }
+    },
+    "courses": {
+      "bim1": {
+        "course_id": "bim1",
+        "course_title": "BIM Plus",
+        "course_desc": "This course is about blah blah ",
+        "course_short_desc": "This Course",
+        "course_duration": 120,
+        "modules": {
+          "mid1": {
+            "mid": 1,
+            "module_name": "module 1",
+            "module_desc": "module is about blah blah",
+            "module_desc_short": "short version",
+            "module_incharge": "Mr Willy Wonka",
+            "module_duration": 1.5,
+            "module_resources": [
+              {
+                "resource_id": 1,
+                "resource_type": "video",
+                "resource_link": "http://google.com",
+                "resource_desc": "This video explains about the following things",
+                "order": 1
+              },
+              {
+                "resource_id": 1,
+                "resource_type": "document",
+                "resource_link": "http://google.com",
+                "resource_desc": "This document explains about the following things",
+                "order": 2
+              }
+            ],
+            "assignments": [
+              {
+                "assignment_id": 1,
+                "assignment_desc": "you have to do stuff",
+                "assignment_resources": [
+                  {
+                    "resource_id": 1,
+                    "resource_desc": "This document explains about the following things",
+                    "resource_type": "document",
+                    "upload_link": "http://drive.com"
+                  }
+                ],
+                "assignment_completion_due": 13
+              },
+              {
+                "assignment_id": 2,
+                "assignment_desc": "you have to do stuff",
+                "module_incharge": "Mr Willy Wonka",
+                "assignment_resources": [
+                  {
+                    "resource_id": 1,
+                    "resource_desc": "This document explains about the following things",
+                    "resource_type": "document",
+                    "upload_link": "http://drive.com"
+                  }
+                ],
+                "assignment_completion_due": 17
+              }
+            ]
+          }
+        }
+      },
+      "bim2": {
+        "course_id": "bim2",
+        "course_name": "BIM Plus International",
+        "course_desc": "This course is about blah blah ",
+        "course_duration": 17,
+        "modules": [
+          {
+            "mid": 1,
+            "module_name": "module 1",
+            "module_desc": "module is about blah blah",
+            "module_desc_short": "short version",
+            "module_incharge": "Mr Willy Wonka",
+            "module_resources": [
+              {
+                "resource_id": 1,
+                "resource_type": "video",
+                "resource_link": "http://google.com",
+                "resource_desc": "This video explains about the following things",
+                "order": 1
+              },
+              {
+                "resource_id": 1,
+                "resource_type": "document",
+                "resource_link": "http://google.com",
+                "resource_desc": "This document explains about the following things",
+                "order": 2
+              }
+            ],
+            "assignments": [
+              {
+                "assignment_id": 1,
+                "assignment_desc": "you have to do stuff",
+                "assignment_resources": [
+                  {
+                    "resource_id": 1,
+                    "resource_desc": "This document explains about the following things",
+                    "resource_type": "document",
+                    "upload_link": "http://drive.com"
+                  }
+                ],
+                "assignment_completion_due": 13
+              },
+              {
+                "assignment_id": 2,
+                "assignment_desc": "you have to do stuff",
+                "assignment_resources": [
+                  {
+                    "resource_id": 1,
+                    "resource_desc": "This document explains about the following things",
+                    "resource_type": "document",
+                    "upload_link": "http://drive.com"
+                  }
+                ],
+                "assignment_completion_due": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "liveclasses": {
+      "classes": [
+        {
+          "title": "Meeting on rocks",
+          "date": "22/12/2023",
+          "meeting_description": "This meeting is about blah blah blah",
+          "passcode": "AXED",
+          "meeting_link": "http://webex.com",
+          "time": "7:30 GMT",
+          "instructor": "Mr. XYZ",
+          "batches": [1, 2]
+        }
+      ]
+    }
+  }
+}

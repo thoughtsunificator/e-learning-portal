@@ -1,0 +1,7 @@
+{
+  "plugins": ["next"],
+  "extends": ["plugin:next/recommended"],
+  "rules": {
+    "next/no-html-link-for-pages": "error"
+  }
+}

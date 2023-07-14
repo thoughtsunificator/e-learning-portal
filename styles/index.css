@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-serif {
+  font-family: "DM Serif Display", serif;
+}
+
+.font-sans {
+  font-family: "Inter", sans-serif;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer base {
+  /* body {
+    font-family: "Inter", sans-serif;
+  } */
+}
+
+@layer components {
+  input[type="checkbox"]:checked ~ label span svg {
+    @apply inline-flex;
+  }
+
+  .sticky .header-logo {
+    @apply py-5 lg:py-2;
+  }
+
+  .sticky .menu-scroll.active {
+    @apply opacity-70;
+  }
+
+  input#togglePlan:checked ~ .dot {
+    @apply translate-x-full;
+  }
+
+  input#checkboxLabel:checked ~ .box span {
+    @apply opacity-100;
+  }
+}
+
+.PhoneInputInput {
+  border-radius: 5px;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.clamp-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.open {
+  transform: translateX(0) !important;
+}
+
+/* custom scrollbar  */
+/* width */
+.scrollbar::-webkit-scrollbar,
+#scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track,
+#scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb,
+#scrollbar::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 40px;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover,
+#scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* primary scrollbar  */
+.primary_scrollbar::-webkit-scrollbar,
+#primary_scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+/* Track */
+.primary_scrollbar::-webkit-scrollbar-track,
+#primary_scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.primary_scrollbar::-webkit-scrollbar-thumb,
+#primary_scrollbar::-webkit-scrollbar-thumb {
+  background: #384e85;
+  border-radius: 40px;
+}
+
+/* Handle on hover */
+.primary_scrollbar::-webkit-scrollbar-thumb:hover,
+#primary_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.courses_aside .courses_list {
+  opacity: 0;
+}
+
+.dark .custom-calendar .MuiDayCalendar-header span {
+  color: gray;
+}
+.dark .custom-calendar button {
+  color: white;
+}
+@media (max-width: 768px) {
+  .courses_aside .courses_list {
+    opacity: 1;
+  }
+  .courses_list {
+    opacity: 0;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+/* pagination started  */
+.rc-pagination li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  cursor: pointer;
+}
+.rc-pagination li.rc-pagination-next.rc-pagination-disabled,
+.rc-pagination li.rc-pagination-prev.rc-pagination-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.rc-pagination li:hover,
+.rc-pagination-item.rc-pagination-item-active {
+  background-color: #384e85;
+  color: white;
+}
+
+/* pagination end  */
